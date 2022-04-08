@@ -1,0 +1,30 @@
+.about .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.about .left{
+    text-align: center;
+}
+
+.about img{
+    width: 370px;
+    transition: .3s ease;
+}
+
+.about img:hover{
+    transform: scale(1.1)
+}
+
+.about .right p{
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 940px){
+    .about .container{
+        grid-template-columns: 1fr;
+    }
+}
